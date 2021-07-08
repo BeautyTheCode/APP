@@ -1,0 +1,23 @@
+<Function>:
+    BoxLayout:
+        size_hint_y: .5
+        size_hint_x: .1
+        pos_hint:{'center_x':.5, 'center_y':.5}
+
+        MDSwitch:
+            id:switch_id
+            active:True
+            pos_hint:{ 'center_x':.55, 'center_y':.99}
+            width: dp(45)
+
+            size_hint: .2, .1
+
+        MDSlider:
+            id:spin_value
+            min:25
+            max:100
+            value:5
+            orientation: "vertical"
+            pos_hint:{ 'center_x':.5, 'center_y':.35}
+
+

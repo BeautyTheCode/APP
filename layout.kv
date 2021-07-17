@@ -7,17 +7,20 @@
         MDSwitch:
             id:switch_id
             active:True
-            pos_hint:{ 'center_x':.55, 'center_y':.99}
+            pos_hint:{ 'center_x':.5, 'center_y':.99}
             width: dp(45)
-
             size_hint: .2, .1
+           
+            #on_active: root.switch_led(self, self.active)
 
         MDSlider:
-            id:spin_value
+            id:temp_value
             min:25
             max:100
-            value:5
+            step:5
             orientation: "vertical"
             pos_hint:{ 'center_x':.5, 'center_y':.35}
+
+            #on_release: root.temp_sensor()
 
 
